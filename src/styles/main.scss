@@ -1,0 +1,163 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/background.png");
+  background-color: $colorBackground;
+  font-family: "Roboto", sans-serif;
+  color: $colorText;
+}
+//------------------------------
+// Texts
+//------------------------------
+h3 {
+  font-weight: normal;
+}
+p,
+h4,
+label,
+input {
+  font-family: "Josefin Slab", serif;
+}
+h4 {
+  font-weight: bold;
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+  padding: 4px;
+}
+//------------------------------
+// Buttons
+//------------------------------
+span {
+  cursor: pointer;
+}
+.main-button {
+  background-color: $colorPurple;
+  padding: 8px 24px 8px 24px;
+  color: $colorWhite;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.accent-button {
+  background-color: transparent;
+  padding: 8px 24px 8px 24px;
+  color: $colorPurple;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+//------------------------------
+// Cards
+//------------------------------
+.general-card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.1);
+  background-color: $colorWhite;
+  padding: 16px;
+}
+.api-card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.1);
+  background-color: $colorWhite;
+  padding: 16px;
+  cursor: pointer;
+  max-height: 160px;
+
+  p {
+    max-height: 38px;
+    overflow: hidden;
+  }
+}
+//------------------------------
+// Inputs
+//------------------------------
+.input-contanier {
+  margin: 16px 0;
+  label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .container{
+    border: 1px solid $colorGreyDark;
+    border-radius: 5px;
+    width: 100%;
+  }
+  input {
+    width: 90%;
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    color: $colorText;
+  }
+  select {
+    width: 98%;
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: $colorText;
+    font-family: "Josefin Slab", serif;
+  }
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+//------------------------------
+// Draggables
+//------------------------------
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 768px;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.flexbox .board {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  background-color: #313131;
+  padding: 16px;
+}
+.flexbox .board1 {
+  padding: 4px;
+  background-color: #313131;
+  cursor: pointer;
+  margin: 16px;
+  height: 50px;
+  width: 200px;
+}
+
+.flexbox .board .card {
+  padding: 15px 25px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.flexbox .board1 .card {
+  display: flex;
+  flex: 1;
+  padding: 4px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}

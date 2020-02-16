@@ -1,0 +1,89 @@
+@import "./variables.scss";
+
+.header {
+  padding: 32px;
+  display: flex;
+  flex: 1;
+  img {
+    height: 32px;
+  }
+  .actions {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.1);
+}
+
+.main-container {
+  padding: 16px 140px 16px 140px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 32px;
+  .card-info {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    background-color: $colorWhite;
+    display: flex;
+    img {
+      height: 240px;
+    }
+    .info {
+      padding: 16px;
+    }
+    .play-container {
+      display: flex;
+      flex: 1;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 16px;
+      img {
+        height: 32px;
+      }
+    }
+  }
+  .card-info-min {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: $colorWhite;
+      text-align: center;
+    }
+  }
+  .card-info-purple {
+    background: url("../assets/purple-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card-info-pink {
+    background: url("../assets/pink-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.apis-container {
+  margin-top: 32px;
+  padding: 16px 90px 16px 90px;
+
+  .apis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    margin-top: 16px;
+  }
+
+  h1 {
+    color: $colorPurple;
+  }
+}
