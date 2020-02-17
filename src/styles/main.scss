@@ -45,6 +45,9 @@ span {
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .accent-button {
   background-color: transparent;
@@ -53,6 +56,8 @@ span {
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
 }
 //------------------------------
 // Cards
@@ -85,7 +90,7 @@ span {
     font-weight: bold;
     font-size: 14px;
   }
-  .container{
+  .container {
     border: 1px solid $colorGreyDark;
     border-radius: 5px;
     width: 100%;
@@ -96,6 +101,14 @@ span {
     font-size: 16px;
     border: none;
     color: $colorText;
+  }
+  textarea {
+    width: 98%;
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    color: $colorText;
+    font-family: "Josefin Slab", serif;
   }
   select {
     width: 98%;
@@ -112,52 +125,4 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
-}
-//------------------------------
-// Draggables
-//------------------------------
-.flexbox {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 768px;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 16px;
-}
-
-.flexbox .board {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 360px;
-  background-color: #313131;
-  padding: 16px;
-}
-.flexbox .board1 {
-  padding: 4px;
-  background-color: #313131;
-  cursor: pointer;
-  margin: 16px;
-  height: 50px;
-  width: 200px;
-}
-
-.flexbox .board .card {
-  padding: 15px 25px;
-  background-color: #f3f3f3;
-  cursor: pointer;
-  margin-bottom: 16px;
-}
-
-.flexbox .board1 .card {
-  display: flex;
-  flex: 1;
-  padding: 4px;
-  background-color: #f3f3f3;
-  cursor: pointer;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
 }

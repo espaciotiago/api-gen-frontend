@@ -7,8 +7,9 @@ function Board(props) {
         const card_id = e.dataTransfer.getData('card_id')
         const card = document.getElementById(card_id)
         if (card && card != null) {
-            card.style.display = 'block'
-            e.target.appendChild(card.cloneNode(true))
+            if(props.onElementAdded){
+                props.onElementAdded(card_id)
+            }
         }
     }
 

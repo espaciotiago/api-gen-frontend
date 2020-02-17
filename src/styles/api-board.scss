@@ -1,0 +1,178 @@
+@import "./variables.scss";
+.api-board {
+  position: relative;
+}
+.main-board {
+  max-width: 80%;
+}
+.entities-board {
+  padding: 16px 90px 16px 90px;
+  h1 {
+    color: $colorPurple;
+  }
+}
+.relations-board {
+  padding: 16px 90px 16px 90px;
+  h1 {
+    color: $colorPurple;
+  }
+}
+.card-elements {
+  position: fixed;
+  right: 40px;
+  top: 15%;
+  height: 80vh;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.1);
+  background-color: $colorWhite;
+  padding: 16px;
+  overflow-y: scroll;
+  .card-actions {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 8px;
+    }
+  }
+  .divider {
+    height: 10px;
+    border-top: 1px solid $colorGrey;
+    margin-bottom: 8px;
+  }
+  .titles {
+    margin-top: 16px;
+    h3 {
+      text-align: center;
+      color: $colorPurple;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    p {
+      text-align: center;
+      color: $colorGreyDark;
+    }
+  }
+}
+.draggbles-elements {
+  margin-top: 16px;
+  overflow-y: scroll;
+}
+//------------------------------
+// Draggables
+//------------------------------
+.elements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  width: 100%;
+  p {
+    color: $colorWhite;
+  }
+}
+.entity-container {
+  cursor: move;
+  background-image: url("../assets/entity.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entity-container-outlined {
+  background-image: url("../assets/entity-outlined.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $colorPurple;
+  }
+}
+.new-entity-container-outlined {
+  background-image: url("../assets/new-entity-outlined.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $colorPurple;
+  }
+}
+.new-entity-container {
+  cursor: move;
+  background-image: url("../assets/new-entity.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rel-multi-container {
+  cursor: move;
+  background-image: url("../assets/relation-multi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rel-multi-container-outlined {
+  background-image: url("../assets/relation-multi-outlined.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $colorOrange;
+  }
+}
+.rel-one-container {
+  cursor: move;
+  background-image: url("../assets/relation-one.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board-entities {
+  width: 100%;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.board-relations {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  justify-content: center;
+  text-align: center;
+  min-height: 200px;
+  .relations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+  }
+}

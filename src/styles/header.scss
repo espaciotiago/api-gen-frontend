@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.header-wrapper {
+    padding: 32px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    img {
+      height: 52px;
+      border: 1px solid $colorGreyDark;
+      border-radius: 50%;
+    }
+    h4{
+        margin-left: 16px;
+    }
+    .actions {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+    }
+  }

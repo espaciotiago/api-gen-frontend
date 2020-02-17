@@ -13,12 +13,10 @@
     justify-content: flex-end;
   }
 }
-
 .card {
   border-radius: 15px;
   box-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.1);
 }
-
 .main-container {
   padding: 16px 140px 16px 140px;
   display: grid;
@@ -85,5 +83,12 @@
 
   h1 {
     color: $colorPurple;
+  }
+
+  .api-header{
+    display: flex;
+     h1{
+       flex: 1;
+     }
   }
 }

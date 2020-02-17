@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PrimaryButton from '../components/PrimaryButton'
 import AccentButton from '../components/AccentButton'
 import Input from '../components/Input'
