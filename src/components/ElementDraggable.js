@@ -7,7 +7,7 @@ function ElementDraggable(props) {
     switch (type) {
         case "entity":
             className = "entity-container"
-            nameTarget = "Entity"
+            nameTarget = props.id ? props.id : "Entity"
             break
         case "entity-outlined":
             className = "entity-container-outlined"

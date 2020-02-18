@@ -29,10 +29,7 @@
   padding: 16px;
   overflow-y: scroll;
   .card-actions {
-    position: absolute;
-    bottom: 16px;
-    left: 0;
-    right: 0;
+    background-color: white;
     .actions {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -60,7 +57,6 @@
 }
 .draggbles-elements {
   margin-top: 16px;
-  overflow-y: scroll;
 }
 //------------------------------
 // Draggables
@@ -84,6 +80,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.entity-container-for-board {
+  background-image: url("../assets/entity.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $colorWhite;
+  }
 }
 .entity-container-outlined {
   background-image: url("../assets/entity-outlined.png");
@@ -117,10 +126,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 55px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.new-entity-container-for-board {
+  background-image: url("../assets/new-entity.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $colorWhite;
+  }
 }
 .rel-multi-container {
   cursor: move;
@@ -132,6 +154,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.rel-multi-container-for-board {
+  background-image: url("../assets/relation-multi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $colorWhite;
+  }
 }
 .rel-multi-container-outlined {
   background-image: url("../assets/relation-multi-outlined.png");
@@ -157,6 +192,19 @@
   justify-content: center;
   align-items: center;
 }
+.rel-one-container-for-board {
+  background-image: url("../assets/relation-one.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $colorWhite;
+  }
+}
 .board-entities {
   width: 100%;
   padding: 16px;
@@ -169,10 +217,17 @@
   padding: 16px;
   justify-content: center;
   text-align: center;
-  min-height: 200px;
   .relations-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
+  }
+}
+.delete-relation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    height: 26px;
   }
 }
